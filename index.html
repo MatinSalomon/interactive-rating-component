@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>practica frontend-mentor</title>
+</head>
+<body>
+    <main>
+        <!--! choose a number -->
+        <section class="container">
+            <div id="img"><img src="./images/icon-star.svg"></div>
+            <h1>How did we do?</h1>
+            <p>please let us know we did with your support request. All feedback is appreciated to help us improve our offering</p>
+
+            <form id="submitForm"> 
+
+                <div class="flexbox" id="container-numbers">
+                    <label for="rate1" class="opt">1</label>
+                    <input type="radio" name="rate" id="rate1" value="1" />
+                    <label for="rate2" class="opt">2</label>
+                    <input type="radio" name="rate" id="rate2" value="2" />
+                    <label for="rate3" class="opt">3</label>
+                    <input type="radio" name="rate" id="rate3" value="3" />
+                    <label for="rate4" class="opt">4</label>
+                    <input type="radio" name="rate" id="rate4" value="4" />
+                    <label for="rate5" class="opt">5</label>
+                    <input type="radio" name="rate" id="rate5" value="5" />
+                  </div>
+                <button id="btnSubmit">SUBMIT</button>
+            </form>
+        </section>
+
+        <!--! response -->
+        <section class="container" id="thankYou">
+            <img src="./images/illustration-thank-you.svg">
+            <div id="chosenNum"><p>you selected <span class="userValue"></span> out of 5</p></div>
+            <h2>Thank you</h2>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
